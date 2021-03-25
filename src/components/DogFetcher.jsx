@@ -22,6 +22,10 @@ export default class DogFetcher extends React.Component {
     })
   }
 
+  componentDidUpdate () {
+    // IN HERE, DO NOT MANIPULATE STATE
+  }
+
   componentWillUnmount () {
     console.log('DogFetcher component *will* unmount!')
     clearInterval(this.state.interval)
